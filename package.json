@@ -4,7 +4,9 @@
   "description": "It's a project to learning about Cypress and JS automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
     "cypress:open": "cypress open"
   },
   "author": "Josimar",
