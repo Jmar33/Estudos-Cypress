@@ -12,9 +12,13 @@
   "author": "Josimar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.1.0"
+    "cypress": "^10.1.0",
+    "mocha": "^10.1.0",
+    "multiple-cucumber-html-reporter": "^3.0.1"
   },
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "15.0.0",
+    "@cypress/browserify-preprocessor": "latest",
     "cypress-iframe": "^1.0.1"
   }
 }
