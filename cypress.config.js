@@ -6,6 +6,14 @@ async function setupNodeEvents(on, config) {
   await preprocessor.addCucumberPreprocessorPlugin(on, config);
 
   on("file:preprocessor", browserify.default(config));
+  on("task", {
+    excelToJsonConverter(filePath) {
+      const result = excelToJson({
+        source: FileSystem.readFileSync(filePath),
+      });
+      return result;
+    },
+  });
 
   return config;
 }

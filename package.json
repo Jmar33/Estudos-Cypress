@@ -14,11 +14,13 @@
   "devDependencies": {
     "cypress": "^10.1.0",
     "mocha": "^10.1.0",
-    "multiple-cucumber-html-reporter": "^3.0.1"
+    "multiple-cucumber-html-reporter": "^3.0.1",
+    "neat-csv": "5.1.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "15.0.0",
     "@cypress/browserify-preprocessor": "latest",
+    "convert-excel-to-json": "^1.7.0",
     "cypress-iframe": "^1.0.1"
   }
 }
